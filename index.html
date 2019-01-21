@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page about me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+            <div id="avatar" onclick="showModule('myModal');"></div>
+        <div id="myModal" class="modal" style="display: none;">
+            <div class="modal_content">
+                <a href="#" onclick="showModule('myModal');" class="close">&times;</a>
+                <img src="avatar.jpg" alt="">
+            </div>
+        </div>
+        <div id="about">Name: Ingvar<br>
+        Lastname: Eris<br>
+        Age: 22 years old<br>
+            <p>I was born in Ukraine. At the age of 19 I came to Russia, to get sitizenship and started studying in <a href="https://www.psuti.ru/">PSUTI</a>. From November of last year,  I became the sitizen of Russia :) My favourite IDE is Brackets.</p>
+        </div>
+    </div>
+    <div id="skills_list">
+        <div id="skills_header">
+            <h3>List of my skills</h3>
+        </div>
+        <div class="skills">English. Start studied from 1 grade. I'm trying upgrade my english to Pre-Intermediate.
+            <br>
+            <div id="translate" style="display: none;">Английский еще начал учить в школе с первого класса. Сейчас страюсь поднять свои знания языка до уровня выше среднего.</div>
+            <a href="#" onclick="hide('translate')">Translate</a>
+        </div>
+        <div class="skills">Basic knowladge of PHP, JavaScript, SQL, HTML, CSS. All this languages I studied by oneself watching Youtube videos and reading some books.
+            <br>
+            <div id="translate2" style="display: none;">Базовые знания PHP, JavaScript, SQL, HTML, CSS. Учил языки самостоятельно просматривая видео на Ютубе или читая книги.</div>
+            <a href="#" onclick="hide('translate2')">Translate</a>
+        </div>
+        <div class="skills">Also I have experience using Photoshop, CMS's Wordpress and Opencart, Git etc.
+            <div id="translate3" style="display: none;">Так же небольшой опыт в использовании движков Wordpress и Opencart, графического редактора Photoshop и системы контроля версий Git.</div>
+            <a href="#" onclick="hide('translate3')">Translate</a>
+        </div>
+    </div>
+</body>
+</html>
